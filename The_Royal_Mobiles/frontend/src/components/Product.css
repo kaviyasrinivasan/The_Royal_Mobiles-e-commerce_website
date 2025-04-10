@@ -1,0 +1,14 @@
+.product-image {
+    height: 200px; /* Set a fixed height */
+    width: 100%; /* Make the image take full card width */
+    object-fit: cover; /* Crop or scale the image to fit the dimensions */
+    border-radius: 5px; /* Optional: Rounded corners */
+  }
+  
+  .product-card {
+    height: 100%; /* Ensures cards are of equal height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  

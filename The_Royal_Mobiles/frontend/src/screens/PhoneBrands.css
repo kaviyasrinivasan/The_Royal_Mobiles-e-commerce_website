@@ -1,0 +1,61 @@
+.brand-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e0 transparent;
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+  
+  .phonebrands-container {
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .phonebrands-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .brand-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .brand-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .brand-circle:hover {
+    transform: scale(1.05);
+  }
+  
+  .brand-logo {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+  }
+  
+  .brand-name {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  

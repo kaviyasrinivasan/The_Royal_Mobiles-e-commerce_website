@@ -1,0 +1,63 @@
+.marquee-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #f3f4f6;
+  padding: 40px 0;
+}
+
+.marquee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.marquee-img {
+  height: 200px;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+/* Bubble Indicator */
+.bubbles {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+/* Bubble Fix */
+.bubble {
+  width: 12px;
+  height: 12px;
+  background-color: #d1d5db;
+  border-radius: 50%; /* Ensures perfect circle */
+  display: inline-block; /* Prevents flex stretching */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Highlight the active bubble */
+.bubble.active {
+  background-color: black;
+  transform: scale(1.0);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

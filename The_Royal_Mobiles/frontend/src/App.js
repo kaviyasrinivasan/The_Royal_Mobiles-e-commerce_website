@@ -23,16 +23,25 @@ import CreateProductScreen from "./screens/CreateProductScreen";
 import EditProductScreen from "./screens/EditProductScreen";
 import OrderListScreen from "./screens/OrderListScreen";
 import PhoneBrands from "./screens/PhoneBrands";
+import UPIPayment from "./components/UPIPayment";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Header />
-      <Marquee /> 
-      <PhoneBrands />
       <main className="py-4">
         <Container>
           <Routes>
+            <Route
+              index
+              path="/"
+              element={
+                <>
+                  <Marquee />
+                  <HomeScreen />
+                </>
+              }
+            />
             <Route path="/product/:id" element={<ProductScreen />} />
             <Route path="/cart" element={<CartScreen />} />
             <Route path="/login" element={<LoginScreen />} />
@@ -41,15 +50,7 @@ const App = () => {
             <Route path="/profile" element={<ProtectedRoute />}>
               <Route path="/profile" element={<ProfileScreen />} />
             </Route>
-            <Route path="/shipping" element={<ProtectedRoute />}>
-              <Route path="/shipping" element={<ShippingScreen />} />
-            </Route>
-            <Route path="/payment" element={<ProtectedRoute />}>
-              <Route path="/payment" element={<PaymentScreen />} />
-            </Route>
-            <Route path="/placeorder" element={<ProtectedRoute />}>
-              <Route path="/placeorder" element={<PlaceOrderScreen />} />
-            </Route>
+            <Route path="/shipping" element={<ProtectedRoute />}></Route>
             <Route path="/order/:id" element={<ProtectedRoute />}>
               <Route path="/order/:id" element={<OrderScreen />} />
             </Route>

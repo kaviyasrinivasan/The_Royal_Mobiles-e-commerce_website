@@ -18,7 +18,7 @@ const products = [
       "Rear Camera: 50MP + 5MP + 2MP | Front Camera: 13MP |5000 mAh Battery 25W Fast Charging Supports 16.91cm (6.66 inch) SuperAMOLED Display 90Hz Refresh Rate",
     brand: "Oppo",
     category: "Mobile",
-    price: 9999.0,
+    price: 10999.0,
     countInStock: 7,
     rating: 4.0,
     numReviews: 8,

@@ -50,9 +50,19 @@ const App = () => {
             <Route path="/profile" element={<ProtectedRoute />}>
               <Route path="/profile" element={<ProfileScreen />} />
             </Route>
-            <Route path="/shipping" element={<ProtectedRoute />}></Route>
+            <Route path="/shipping" element={<ProtectedRoute />}>
+              <Route path="/shipping" element={<ShippingScreen />} />
+            </Route>
+            <Route path="/Payment" element={<ProtectedRoute />}>
+              <Route path="/Payment" element={<PaymentScreen />} />
+            </Route>
+            <Route path="/PlaceOrder" element={<ProtectedRoute />}>
+              <Route path="/PlaceOrder" element={<PlaceOrderScreen />} />
+            </Route>
             <Route path="/order/:id" element={<ProtectedRoute />}>
               <Route path="/order/:id" element={<OrderScreen />} />
+              {/* <Route path="/upi-payment" element={<UPIPayment />} /> */}
+
             </Route>
             <Route path="/admin/users" element={<OnlyAdmin />}>
               <Route path="/admin/users" element={<UserListScreen />} />

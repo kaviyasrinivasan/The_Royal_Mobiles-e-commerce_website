@@ -855,7 +855,7 @@ const OrderScreen = () => {
   }
 
   // UPI deep link for Google Pay
-  const upiId = "";
+  const upiId = "YOUR_UPI_ID"; // Replace with your UPI ID
   const merchantName = "Mobile Shop";
   const upiLink = order && order._id && order.totalPrice
     ? `upi://pay?pa=${upiId}&pn=${encodeURIComponent(
